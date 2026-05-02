@@ -1,0 +1,11 @@
+Deficiencias identificadas:
+
+El uso de la función sqrt hace que el algoritmo sea más lento en comparación con otros métodos como Bresenham o el algoritmo de punto medio.
+Se utilizan números decimales (double), lo que puede generar errores de precisión y provocar que el círculo no sea perfectamente uniforme.
+Solo se calculan dos puntos por iteración (parte superior e inferior), lo que puede generar espacios o discontinuidades en el círculo.
+No se aprovecha la simetría completa del círculo (8 octantes), lo que hace que el algoritmo sea menos eficiente.
+El uso de redondeo puede ocasionar que algunos píxeles no se alineen correctamente, afectando la calidad visual.
+El algoritmo depende de operaciones matemáticas costosas en cada iteración, lo que lo hace menos eficiente computacionalmente.
+
+Conclusión:
+El método basado en la ecuación del círculo cumple con el objetivo de representar la figura de manera matemática, pero presenta limitaciones importantes en eficiencia, precisión y calidad visual en comparación con algoritmos optimizados.

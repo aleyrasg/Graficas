@@ -1,0 +1,14 @@
+Se implementó el algoritmo de punto medio para el dibujo de circunferencias, extendiéndolo para permitir el control del grosor de la línea.
+
+El grosor se logró dibujando múltiples circunferencias concéntricas alrededor del radio principal, variando el radio en un rango determinado por el grosor.
+
+Deficiencias identificadas:
+
+1.El método incrementa el número de operaciones, ya que se dibujan varias circunferencias en lugar de una sola.
+2.Puede generar bordes irregulares cuando el grosor es grande, debido a la superposición de píxeles.
+3.No garantiza un grosor uniforme en todos los puntos de la circunferencia.
+4.El rendimiento disminuye al aumentar el grosor.
+5.No es el método más eficiente comparado con algoritmos especializados para grosor.
+
+Conclusión:
+El uso de circunferencias concéntricas permite implementar fácilmente el grosor, pero presenta limitaciones en eficiencia y uniformidad visual.

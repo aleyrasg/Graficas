@@ -1,0 +1,10 @@
+Implementación del algoritmo de punto medio:
+
+Se desarrolló un programa para dibujar líneas rectas utilizando el algoritmo de punto medio, el cual determina el siguiente píxel evaluando la posición de un punto medio entre dos posibles candidatos.
+
+Este algoritmo permite decidir si el siguiente punto debe avanzar horizontalmente o en diagonal, utilizando un parámetro de decisión que se actualiza en cada iteración.
+
+Al igual que el algoritmo de Bresenham, el método de punto medio utiliza únicamente operaciones enteras, lo que lo hace eficiente y preciso. Además, permite dibujar cualquier tipo de línea sin necesidad de manejar múltiples casos especiales.
+
+Conclusión:
+El algoritmo de punto medio es una alternativa eficiente para el trazado de líneas, basada en principios geométricos y evaluaciones incrementales.

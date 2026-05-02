@@ -1,0 +1,12 @@
+Actividad: Dibujo de línea recta usando el modelo matemático y = mx + b (versión mejorada)
+
+Comentarios sobre las mejoras realizadas:
+
+Para corregir las deficiencias identificadas en la primera versión del programa, se realizaron las siguientes mejoras:
+
+Se agregó el manejo de líneas verticales (cuando x0 = x1), evitando la división entre cero al calcular la pendiente. En este caso, la línea se dibuja iterando sobre el eje Y.
+Se corrigió el problema de dirección, permitiendo dibujar líneas independientemente de si x0 es mayor o menor que x1, utilizando funciones como Math.min() y Math.max().
+Se mejoró el algoritmo para pendientes altas. Cuando el valor absoluto de la pendiente es mayor que 1, se itera sobre el eje Y en lugar del eje X, evitando huecos en la línea.
+Se cambió el tipo de dato de float a double para mejorar la precisión en los cálculos matemáticos.
+Se mantuvo el uso exclusivo de la ecuación y = mx + b para el cálculo de los puntos, cumpliendo con la restricción de no utilizar funciones gráficas de Java para dibujar líneas.
+Se conservó el uso de un buffer de imagen (BufferedImage) y el método setRGB para manipular píxeles directamente.

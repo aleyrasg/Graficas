@@ -1,0 +1,14 @@
+Comentarios sobre el programa:
+
+Se desarrolló un programa para dibujar una circunferencia utilizando la ecuación del círculo combinada con el concepto de simetría de ocho lados. En lugar de calcular todos los puntos del círculo, únicamente se calculan los puntos de un octante y se reflejan en los otros siete.
+
+Ventajas identificadas:
+
+1.Se reduce significativamente el número de cálculos necesarios, ya que solo se trabaja con una octava parte del círculo.
+2.Mejora la eficiencia del algoritmo al generar múltiples puntos a partir de uno solo.
+3.Permite aprovechar la simetría natural del círculo para simplificar el problema.
+4.Disminuye el uso de operaciones matemáticas costosas, como la raíz cuadrada, en comparación con métodos que calculan todos los puntos.
+5.Produce una circunferencia más uniforme en comparación con métodos que dependen de incrementos angulares.
+
+Conclusión:
+El uso de la simetría de ocho lados permite optimizar el proceso de dibujo de una circunferencia, reduciendo cálculos y mejorando el rendimiento, manteniendo un enfoque matemático claro.

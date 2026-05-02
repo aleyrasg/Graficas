@@ -1,0 +1,14 @@
+Comparación entre algoritmo de Bresenham y punto medio:
+
+Ambos algoritmos son utilizados para dibujar circunferencias de manera eficiente y se basan en el uso de un parámetro de decisión para determinar el siguiente píxel.
+
+Diferencias identificadas:
+
+1.El algoritmo de punto medio se deriva directamente de la ecuación implícita del círculo, mientras que el algoritmo de Bresenham es una optimización de este.
+2.Bresenham utiliza únicamente operaciones enteras, lo que lo hace más eficiente en términos computacionales.
+3.El algoritmo de punto medio puede involucrar operaciones ligeramente más complejas en su formulación, mientras que Bresenham simplifica los cálculos.
+4.Ambos algoritmos utilizan simetría de ocho lados, pero Bresenham está más optimizado para implementaciones en sistemas gráficos.
+5.En la práctica, ambos algoritmos producen resultados muy similares, pero Bresenham es preferido en aplicaciones donde el rendimiento es crítico.
+
+Conclusión:
+El algoritmo de Bresenham puede considerarse una versión optimizada del algoritmo de punto medio, ofreciendo mayor eficiencia sin perder precisión en el dibujo de circunferencias.

@@ -1,0 +1,33 @@
+DEFICIENCIAS DEL ALGORITMO y = mx + b
+======================================
+
+1. DIVISIÓN ENTRE CERO (pendiente indefinida)
+   Cuando x0 == x1 (línea vertical), la expresión (y1 - y0) / (x1 - x0)
+   produce una división entre cero. El programa lanzará ArithmeticException
+   o generará un valor Infinity/NaN, y la línea vertical nunca se dibujará.
+
+2. PÍXELES FALTANTES EN PENDIENTES PRONUNCIADAS (|m| > 1)
+   El ciclo itera sobre X de uno en uno. Cuando la pendiente es mayor a 1
+   o menor a -1, el salto en Y entre píxeles consecutivos es mayor a 1,
+   dejando huecos visibles en la línea.
+
+3. DIRECCIÓN ÚNICA (x0 debe ser menor que x1)
+   El ciclo "for (x = x0; x <= x1; x++)" asume que x0 < x1.
+   Si el usuario pasa los puntos en orden inverso (x0 > x1), el ciclo
+   no ejecuta ninguna iteración y no se dibuja nada.
+
+4. ACUMULACIÓN DE ERROR DE PUNTO FLOTANTE
+   Calcular y = m*x + b en cada iteración con aritmética flotante acumula
+   pequeños errores de redondeo que pueden desplazar píxeles respecto a la
+   posición matemáticamente exacta.
+
+5. RENDIMIENTO
+   Multiplicar y sumar en punto flotante en cada iteración es más costoso
+   que algoritmos enteros como Bresenham, que solo usa sumas y comparaciones.
+
+CONCLUSIÓN
+----------
+El algoritmo y = mx + b es útil para entender el concepto matemático de
+una recta, pero no es adecuado para un rasterizador real. Los algoritmos
+de línea basados en aritmética entera (Bresenham, DDA) resuelven todos los
+problemas anteriores de forma eficiente.

@@ -1,0 +1,10 @@
+Deficiencias identificadas:
+
+1.El algoritmo depende del valor del paso (incremento de t). Si el paso es grande, el círculo se ve incompleto; si es pequeño, el programa se vuelve más lento.
+2.Se utilizan funciones trigonométricas (sin y cos), las cuales son computacionalmente costosas.
+3.Se emplean números decimales (double), lo que puede generar errores de redondeo y afectar la precisión.
+4.Algunos píxeles pueden repetirse o faltar debido al redondeo de valores.
+5.No es el método más eficiente comparado con algoritmos como Bresenham o punto medio.
+
+Conclusión:
+El método de coordenadas polares es sencillo de implementar y fácil de entender desde el punto de vista matemático, pero presenta desventajas en eficiencia y precisión.

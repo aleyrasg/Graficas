@@ -1,0 +1,14 @@
+Se implementó el algoritmo de punto medio para dibujar circunferencias, incorporando el uso de máscaras binarias para generar diferentes estilos de línea, como continua, punteada y segmentada.
+
+La máscara se recorre de forma cíclica y determina si los puntos calculados deben dibujarse o no.
+
+Deficiencias identificadas:
+
+1.La máscara no sigue exactamente la longitud real del arco, ya que se aplica por iteración y no por distancia, lo que puede generar patrones irregulares.
+2.Al utilizar simetría de 8 lados, se dibujan múltiples puntos al mismo tiempo, lo que puede romper la continuidad del patrón visual.
+3.Algunos segmentos pueden verse más largos o más cortos dependiendo de la curvatura del círculo.
+4.No existe control preciso del espaciado entre puntos, especialmente en radios pequeños.
+5.El patrón puede verse inconsistente debido a la discretización en píxeles.
+
+Conclusión:
+El uso de máscaras en circunferencias permite generar diferentes estilos visuales, pero presenta limitaciones en la uniformidad del patrón debido a la naturaleza discreta del algoritmo.
